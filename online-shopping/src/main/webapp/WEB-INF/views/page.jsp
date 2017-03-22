@@ -65,9 +65,9 @@
 			</c:if>
 
 			<!-- Load only when Detail page -->
-			<c:if test="${userClickView==true }">
-				<%@include file="viewproduct.jsp"%>
-			</c:if>
+			<c:if test="${userClickAllProducts==true or userClickCategoryProducts==true}"> 
+				<%@include file="listProducts.jsp"%> 
+			</c:if> -
 
 		</div>
 		<!-- Footer comes here -->
